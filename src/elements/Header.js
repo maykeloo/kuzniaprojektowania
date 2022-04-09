@@ -112,7 +112,7 @@ export const ScrollDown = styled.img.attrs(() => ({
 }))`
     position: absolute;
     width: 10rem;
-    bottom: -10rem;
+    bottom: -5rem;
     left: calc(50% - 5rem);
     cursor: pointer;
     animation: ${rotate} 8s linear infinite;

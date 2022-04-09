@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import {device} from './Body'
+import Typewriter from 'typewriter-effect';
+
+//ASSETS
+import kuznia from '../assets/kuzniablue.svg'
 
 export const SectionOneWrapper = styled.section`
     width: 100vw;
@@ -12,20 +17,38 @@ export const SectionOneContent = styled.div`
 `
 
 export const Title = styled.span`
-    font-size: 2rem;
+    font-size: 1.6rem;
     display: block;
+    font-weight: 200;
 `
 
 export const OfferBox = styled.div`
     width: 100%;
+    position: relative;
+
+    .Typewriter {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    transform: translateX(45%);
+    color: var(--blue);
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 10rem;
+    }
 `
 export const LeftBox = styled.div`
     width: 50%;
+
+    @media ${device.tablet} {
+        width: 100%;
+    }
 `
 
 export const OfferTitle = styled.h2`
     color: var(--blue);
     font-size: 4rem;
+    margin-top: 1rem;
 `
 
 export const OffetTextBox = styled.div`
@@ -55,14 +78,19 @@ export const LabelsBox = styled.div`
     gap: 0.5rem;
     width: 60%;
     margin-top: 2rem;
+
+    @media ${device.tablet} {
+        width: 100%;
+    }
 `
 
 export const Label = styled.div`
     padding: 0.5rem 2rem;
-    background-color: var(--blue);
-    border-radius: 10px;
+    background-color: rgba(36, 57, 133, 0.7);
     color: white;
     display: inline-flex;
     justify-content: center;
     align-items: center;
 `
+
+export const Kuznia = styled(Typewriter)``

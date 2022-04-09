@@ -31,6 +31,7 @@ function App() {
     <Context.Provider value={{
       sidebarVisible,
       setSidebarVisilityHandler,
+      setSidebarVisibility,
       offset
     }}>
       <Router>
