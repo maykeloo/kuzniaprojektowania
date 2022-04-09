@@ -6,7 +6,6 @@ import {
   SubText,
   Title,
   HeaderWrap,
-  VideoBackground
 } from "../elements/Header";
 
 //ASSETS

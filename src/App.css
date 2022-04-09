@@ -5,6 +5,10 @@
     overflow: hidden;
 }
 
+:root {
+    --blue: #243985;
+}
+
 html {
     padding: 0;
     margin: 0;

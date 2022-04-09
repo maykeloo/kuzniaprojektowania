@@ -1,11 +1,7 @@
 import { useState, createContext,  useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router} from "react-router-dom";
-
 import Body from './components/Body';
-import Sidebar from './components/Sidebar';
-
-
 
 export const Context = createContext();
 
@@ -19,7 +15,7 @@ function App() {
   useEffect(() => {
     const body = document.getElementById('body');
       const onScroll = () => {
-        if(body.scrollTop > 900) {
+        if(body.scrollTop > window.innerHeight) {
           setOffset(true)
         } else {
           setOffset(false)

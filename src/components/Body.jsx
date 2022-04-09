@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 import Sidebar from "./Sidebar"; 
 
 const Body = () => {
-  const { sidebarVisible, setSidebarVisible } = useContext(Context);
+  const { sidebarVisible } = useContext(Context);
 
   return (
     <>
