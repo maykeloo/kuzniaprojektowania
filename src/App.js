@@ -1,24 +1,47 @@
-import logo from './logo.svg';
+import { useState, createContext,  useEffect } from 'react';
 import './App.css';
+import { BrowserRouter as Router} from "react-router-dom";
+
+import Body from './components/Body';
+import Sidebar from './components/Sidebar';
+
+
+
+export const Context = createContext();
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  //STATES
+  const [sidebarVisible, setSidebarVisibility] = useState(false);
+  const [offset, setOffset] = useState(false);
+  const setSidebarVisilityHandler = () => {
+    setSidebarVisibility(!sidebarVisible);
+  }
+  useEffect(() => {
+    const body = document.getElementById('body');
+      const onScroll = () => {
+        if(body.scrollTop > 900) {
+          setOffset(true)
+        } else {
+          setOffset(false)
+        }
+      };
+      body.removeEventListener('scroll', onScroll);
+      body.addEventListener('scroll', onScroll, { passive: true });
+      return () => body.removeEventListener('scroll', onScroll);
+  }, []);
+
+  return (  
+    <>
+    <Context.Provider value={{
+      sidebarVisible,
+      setSidebarVisilityHandler,
+      offset
+    }}>
+      <Router>
+     <Body/>
+     </Router>
+    </Context.Provider>
+    </>
   );
 }
 
