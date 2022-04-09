@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/kuzniaprojektowania/static/css/main.e957ece9.css",
+    "main.js": "/kuzniaprojektowania/static/js/main.56aa4b4e.js",
+    "static/media/videobg.mp4": "/kuzniaprojektowania/static/media/videobg.450eb168eba1650c8b7e.mp4",
+    "static/media/scrolldown.svg": "/kuzniaprojektowania/static/media/scrolldown.cf4fd2452cc2e61decf5691510d3938d.svg",
+    "index.html": "/kuzniaprojektowania/index.html",
+    "static/media/konfarrow.svg": "/kuzniaprojektowania/static/media/konfarrow.d4cba388bec816aceea806109b573b69.svg",
+    "main.e957ece9.css.map": "/kuzniaprojektowania/static/css/main.e957ece9.css.map",
+    "main.56aa4b4e.js.map": "/kuzniaprojektowania/static/js/main.56aa4b4e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e957ece9.css",
+    "static/js/main.56aa4b4e.js"
+  ]
+}
