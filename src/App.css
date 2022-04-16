@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* INDEX */
+body {
+  margin: 0;
+  font-family: 'Karla', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #001524;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  padding: 0;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+canvas {
+  width: 100% !important;
+  height: 100% !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 768px){
+  html{font-size:70%;}
+}
+@media screen and (min-width: 768px){
+  html{font-size:53.33333333%;}
+}
+@media screen and (min-width: 1024px){
+  html{font-size:71.111111%;}
+}
+@media screen and (min-width: 1200px){
+  html{font-size:83.333333%;}
+}
+@media screen and (min-width: 1440px){
+  html{font-size:100%;background:none;}
+}
+
+
+/* STYLES */
+
+/* HAMBURGER */
+.plate {
+  height: 4rem;
+  width: 4rem;
+  cursor: pointer;
+}
+.burger {
+  filter: url(#gooeyness);
+  height: 4rem;
+  position: absolute;
+  width: 4rem;
+}
+.x {
+  transform: scale(0);
+  transition: transform 400ms;
+  height: 4rem;
+  position: absolute;
+  width: 4rem;
+}
+.line {
+  fill: none;
+  stroke: #F4ECE2;
+  stroke-width: 3px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform-origin: 50%;
+  transition: strone, stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
+}
+.x .line {
+  stroke-width: 3px;
+}
+/* First plate */
+.plate1 .line2 {
+  stroke-dasharray: 40 200;
+  stroke-dashoffset: 0px;
+}
+.plate1 .line3 {
+  stroke-dasharray: 40 179;
+  stroke-dashoffset: 0px;
+}
+.active .line {
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms;
+}
+.active.plate1 .line1 {
+  transform: scale(0, 1);
+  transition: transform 500ms 100ms;
+}
+.active.plate1 .line2 {
+  stroke-dasharray: 5px 200;
+  stroke-dashoffset: -164px;
+}
+.active.plate1 .line3 {
+  stroke-dasharray: 5px 179;
+  stroke-dashoffset: -142px;
+}
+.active .x {
+  transform: scale(1);
+  transition: transform 400ms 350ms;
 }
