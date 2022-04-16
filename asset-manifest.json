@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/kuzniaprojektowania/static/css/main.204efc1c.css",
-    "main.js": "/kuzniaprojektowania/static/js/main.48a935a1.js",
-    "static/media/videobg.mp4": "/kuzniaprojektowania/static/media/videobg.450eb168eba1650c8b7e.mp4",
-    "static/media/scrolldown.svg": "/kuzniaprojektowania/static/media/scrolldown.cf4fd2452cc2e61decf5691510d3938d.svg",
+    "main.css": "/kuzniaprojektowania/static/css/main.af89d553.css",
+    "main.js": "/kuzniaprojektowania/static/js/main.1911bf5b.js",
+    "static/media/mainvideo.mp4": "/kuzniaprojektowania/static/media/mainvideo.3f2773429c6c29c54a1f.mp4",
+    "static/media/kuzniatext.svg": "/kuzniaprojektowania/static/media/kuzniatext.38800f0810c685f8ac33fcc54ba12ab1.svg",
     "index.html": "/kuzniaprojektowania/index.html",
-    "static/media/konfarrow.svg": "/kuzniaprojektowania/static/media/konfarrow.d4cba388bec816aceea806109b573b69.svg",
-    "main.204efc1c.css.map": "/kuzniaprojektowania/static/css/main.204efc1c.css.map",
-    "main.48a935a1.js.map": "/kuzniaprojektowania/static/js/main.48a935a1.js.map"
+    "main.af89d553.css.map": "/kuzniaprojektowania/static/css/main.af89d553.css.map",
+    "main.1911bf5b.js.map": "/kuzniaprojektowania/static/js/main.1911bf5b.js.map"
   },
   "entrypoints": [
-    "static/css/main.204efc1c.css",
-    "static/js/main.48a935a1.js"
+    "static/css/main.af89d553.css",
+    "static/js/main.1911bf5b.js"
   ]
 }
